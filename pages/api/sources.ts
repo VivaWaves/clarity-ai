@@ -19,7 +19,7 @@ const searchHandler = async (req: NextApiRequest, res: NextApiResponse<Data>) =>
     const sourceCount = 4;
 
     // GET LINKS
-    const response = await fetch(`https://search.vivawaves.com/s?q=${query}`);
+    const response = await fetch(`https://google.com/s?q=${query}`);
     const html = await response.text();
     const $ = cheerio.load(html);
     const linkTags = $("a");
